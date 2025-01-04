@@ -7,11 +7,28 @@ public class Aluno {
     //Adicionando atributos
     protected String nome;
     protected long matricula;
-    protected List<Double> nota;
+    protected List<Double> notas;
 
-    public Aluno(String nome, long matricula, List<Double> nota) {
+    //Adicionando aluno
+    public Aluno(String nome, long matricula, List<Double> notas) {
         this.nome = nome;
         this.matricula = matricula;
-        this.nota = nota;
+        this.notas = notas;
     }
+
+    //Método para calcular média
+    public double calcularMedia() {
+        double soma = 0;
+        for (double nota : notas) {
+            soma += nota;
+        }
+        return soma / notas.size();
+    }
+
+    //Método para verificar a aprovação
+    public boolean verificarAprovação() {
+        return calcularMedia() >= 7;
+    }
+
+
 }
