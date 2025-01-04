@@ -2,7 +2,7 @@
 > Crie um sistema que gerencie cursos, professores e alunos. O objetivo é aplicar os conceitos de classes, objetos, herança, encapsulamento, polimorfismo, e listas em um contexto realista.
 
 ## Requisitos
-###Classes principais:
+### Classes principais:
 
 - Curso: representa um curso, contendo o nome do curso, uma lista de alunos e um professor.
 - Aluno: representa um aluno, contendo nome, matrícula e uma lista de notas.
