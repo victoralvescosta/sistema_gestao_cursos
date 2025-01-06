@@ -18,4 +18,15 @@ public class Curso {
     public void adicionarAluno(Aluno aluno) {
         alunoList.add(aluno);
     }
+
+    //Exibindo informações
+    public void exibirInfor() {
+        System.out.println("Nome do curso: " + nomeCurso);
+        System.out.println("Professor: " + professor);
+        System.out.println("Alunos: ");
+        for (Aluno alunos : alunoList) {
+            System.out.println(alunos);
+        }
+
+    }
 }

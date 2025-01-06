@@ -39,7 +39,7 @@ public class Aluno extends Pessoa {
     @Override
     public String toString() {
         return super.toString() + "\nMatrícula: " + matricula +
-                "\nMédia: " + String.format("%2.f", calcularMediaAluno()) +
+                "\nMédia: " + String.format("%.2f", calcularMediaAluno()) +
                 "\nSituação: " + (verificarMedia() ? "Aprovado" : "Reprovado");
     }
 }
